@@ -1,15 +1,15 @@
-Neurological Eye Movement Screening System
-Overview
+**Neurological Eye Movement Screening System**
+**Overview**
 
 This project is a real-time eye movement analysis and neurological screening system that combines Computer Vision and Machine Learning techniques. Using a standard webcam and MediaPipe Face Mesh, the system tracks iris movements, extracts gaze-related features, and predicts whether the observed eye movement pattern is normal or abnormal.
 
 The primary objective is to provide a lightweight and cost-effective alternative to traditional eye-tracking systems that require expensive hardware and controlled laboratory environments.
 
-Problem Statement
+**Problem Statement**
 
 Neurological disorders and behavioral conditions often influence eye movement patterns. Traditional eye-tracking systems used for diagnosis and assessment require specialized equipment, making them expensive and inaccessible for many users.
 
-Challenges include:
+**Challenges include:**
 
 High cost of commercial eye-tracking devices
 Requirement of specialized hardware
@@ -18,7 +18,7 @@ Lack of affordable real-time screening tools
 
 This project addresses these challenges by developing a webcam-based neurological screening system using machine learning and computer vision technologies.
 
-Dataset Description
+**Dataset Description**
 
 The project utilizes two datasets:
 
@@ -36,7 +36,7 @@ Abnormal Eye Movement Dataset
 
 Contains autism-related and abnormal gaze behavior patterns used for classification and model training.
 
-Data Preprocessing
+**Data Preprocessing**
 
 The datasets undergo preprocessing steps such as:
 
@@ -49,12 +49,12 @@ Dataset balancing
 
 These steps improve model performance and prediction reliability.
 
-Project Workflow
-1. Data Collection
+**Project Workflow**
+**1. Data Collection**
 
 Historical gaze feature datasets representing normal and abnormal eye movement behavior are collected and prepared for training.
 
-2. Data Preprocessing
+**2. Data Preprocessing**
 
 The preprocessing pipeline includes:
 
@@ -66,7 +66,7 @@ Dataset preparation for machine learning
 
 This ensures consistency and improves model accuracy.
 
-3. Real-Time Eye Tracking
+**3. Real-Time Eye Tracking**
 
 The system captures live video through a webcam and performs:
 
@@ -77,7 +77,7 @@ Eye movement tracking
 
 MediaPipe Face Mesh is used to extract precise eye landmarks in real time.
 
-4. Calibration and Gaze Normalization
+**4. Calibration and Gaze Normalization**
 
 Before tracking begins, a calibration stage is performed where users look at the screen center.
 
@@ -89,7 +89,7 @@ Reduces user-specific variations
 
 This improves tracking consistency and prediction performance.
 
-5. Feature Extraction
+**5. Feature Extraction**
 
 The system extracts important eye movement features from tracked gaze data.
 
@@ -102,7 +102,7 @@ Fixation Ratio
 
 These features serve as input for machine learning classification.
 
-6. Model Training and Classification
+**6. Model Training and Classification**
 
 A Logistic Regression classifier is trained using the processed datasets.
 
@@ -113,7 +113,7 @@ Abnormal
 
 The trained model is saved and used for real-time prediction.
 
-7. Real-Time Prediction
+**7. Real-Time Prediction**
 
 Once tracking is completed, the system:
 
@@ -156,7 +156,7 @@ AI-Assisted Diagnosis Support
 Academic Research
 Novelty of the Project
 
-Key contributions of this work include:
+**Key contributions of this work include:**
 
 Webcam-based real-time eye tracking
 MediaPipe Face Mesh integration
@@ -167,7 +167,7 @@ Streamlit-based deployment
 Low-cost neurological screening framework
 Future Enhancements
 
-Future developments may include:
+**Future developments may include:**
 
 Deep Learning-based classification models
 Larger neurological datasets
@@ -176,7 +176,8 @@ Cloud deployment
 Mobile application integration
 Advanced gaze estimation techniques
 Clinical validation studies
-Conclusion
+
+**Conclusion**
 
 This project demonstrates how Computer Vision and Machine Learning can be combined to develop an accessible and cost-effective neurological screening system. By leveraging webcam-based eye tracking, feature engineering, and Logistic Regression, the system provides real-time analysis of eye movement behavior and supports AI-assisted healthcare applications.
 
